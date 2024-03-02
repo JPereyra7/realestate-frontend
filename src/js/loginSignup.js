@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const logo = document.getElementById("logo");
   const formContainer = document.querySelector(".formContainer");
 
+
+
+
   logo.addEventListener("click", function () {
     this.classList.toggle("clicked");
 
@@ -28,4 +31,20 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 2500); // Adjust delay to match transition duration
     }
   });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const pCreateAccount = document.querySelector(".pCreateAccount");
+  if (pCreateAccount) {
+      pCreateAccount.addEventListener("click", function () {
+          window.location.href = "./signup.html";
+      });
+  }
+
+  const pLoginAccount = document.querySelector(".pLoginAccount");
+  if (pLoginAccount) {
+      pLoginAccount.addEventListener("click", function () {
+          window.location.href = "./index.html";
+      });
+  }
 });
