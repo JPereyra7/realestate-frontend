@@ -1,0 +1,108 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  /* box-sizing: border-box; */
+}
+
+body {
+  overflow: hidden; /* Ensure no scrolling */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin-bottom: 200px;
+  z-index: 2;
+  margin-right: 10px;
+  transition: margin-top 0.5s ease;
+}
+
+.logo.clicked {
+  transition: 2s;
+  margin-top: 600px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* align-items: center; */
+  gap: 1em;
+  z-index: 2;
+  padding: 47px;
+  /* border: 0.3px solid #ddcd9e71; */
+  transition: opacity 0.5s ease;
+}
+
+.formContainer.visible {
+  display: flex;
+  opacity: 1;
+}
+
+label {
+  font-size: 1em;
+  color: aliceblue;
+}
+
+#usernameInput {
+  padding: 8px 20px;
+}
+
+#passwordInput {
+  padding: 8px 20px;
+}
+
+.signIn {
+  margin-top: 20px;
+  padding: 8px 83px;
+  border-radius: 4px;
+}
+
+.signIn:hover {
+  transition: 0.7s ease;
+  background-color: #e6b36d;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.signIn:active {
+  transition: 0.7s ease;
+  background-color: #e6b36d;
+  color: aliceblue;
+}
