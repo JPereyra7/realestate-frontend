@@ -10,22 +10,22 @@ Will upload the backend database to a web-host later on - In the meantime I have
 
 Technologies used for this project 
 
-            || Frontend ||
+|| Frontend ||
 
--Javascript ✅
--HTML5      ✅
--CSS3       ✅
+-Javascript ✅ <br />
+-HTML5      ✅ <br />
+-CSS3       ✅ <br />
 
-            || Backend ||
+|| Backend ||
 
--Javascript ✅
--Node.js    ✅
--Express.js ✅
--REST Api   ✅
--MySQL      ✅
--DBeaver    ✅
--Nodemon    ✅
--Cors       ✅
--BCrypt     ✅
--Express-Validator  ✅
--ORM (Sequelize)    ✅
+-Javascript ✅ <br />
+-Node.js    ✅ <br />
+-Express.js ✅ <br />
+-REST Api   ✅ <br />
+-MySQL      ✅ <br />
+-DBeaver    ✅ <br />
+-Nodemon    ✅ <br />
+-Cors       ✅ <br />
+-BCrypt     ✅ <br />
+-Express-Validator  ✅ <br />
+-ORM (Sequelize)    ✅ <br />
