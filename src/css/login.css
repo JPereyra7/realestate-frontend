@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-body { /* Ensure no scrolling */
-}
-
-html {
-
-}
-
 .container {
   position: relative;
   width: 100%;
@@ -94,7 +87,7 @@ label {
 
 .signIn {
   margin-top: 20px;
-  padding: 8px 83px;
+  padding: 8px 53px;
   border-radius: 8px;
   font-size: .9em;
   background-color: rgba(27, 26, 26, 0.721);
@@ -142,14 +135,13 @@ label {
 
 @media screen and (min-width: 1024px) {
   .logo {
-    width: 300px; /* Increase the width of the logo */
-    margin-bottom: 250px; /* Adjust the margin */
-    margin-right: 20px; /* Adjust the margin */
+    width: 300px; 
+    margin-bottom: 250px;
+    margin-right: 20px;
   }
 
-  .formContainer {
-    padding: 60px; /* Increase the padding */
-    margin-bottom: 350px; /* Adjust the margin */
+  label {
+    font-size: 1.3em;
   }
   .bg {
   position: absolute;
@@ -160,5 +152,15 @@ label {
   background-image: url('/src/img/bgsmall.jpg'); /* Adjust the URL */
   background-size: cover;
   background-position: center;
+}
+#usernameInput {
+    padding: 10px 40px;
+}
+#passwordInput {
+    padding: 10px 40px;
+}
+.signIn {
+    padding: 10px 65px;
+    font-size: 1.1em;
 }
   }
