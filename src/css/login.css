@@ -107,6 +107,14 @@ label {
   font-weight: 500;  
 }
 
+.signup:hover {
+    transition: 0.7s ease;
+  background-color: hsla(35, 71%, 66%, 0.737);
+  color: aliceblue;
+  cursor: pointer;
+  font-weight: 500;
+}
+
 .signIn:hover {
   transition: 0.7s ease;
   background-color: hsla(35, 71%, 66%, 0.737);
