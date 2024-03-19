@@ -48,3 +48,9 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   }
 });
+
+const signIn = document.getElementById("signIn");
+signIn.addEventListener("click", function (e) {
+  e.preventDefault();
+  window.location.href = "./homepage.html";
+});
