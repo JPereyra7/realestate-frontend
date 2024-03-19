@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.7;
+  object-fit: cover;
+}
+
+.logo-wrap {
+  margin: -30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lillardLogo {
+  z-index: 2;
+  position: relative;
+  max-height: 184px;
+  max-width: 100%;
+  /* margin-bottom: 100px; */
+}
+
+.hero-container {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* opacity: 0.8; */
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.hero-text {
+  display: flex;
+  text-align: center;
+  /* gap: 0.5em; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.hBeverlyText {
+  font-family: Montserrat, sans-serif;
+  font-weight: 150;
+  font-size: 40px;
+  margin-top: 20rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  z-index: 4;
+}
+
+.listingManor {
+  font-family: Montserrat, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 150;
+  letter-spacing: 6px;
+  z-index: 4;
+  margin-top: 5px;
+}
+
+.listingManorText {
+  font-family: Montserrat, sans-serif;
+  color: white;
+  font-weight: 300;
+  z-index: 4;
+  background-color: transparent;
+  border-style: none;
+  margin-top: 10px;
+  border: 1px solid white;
+  padding: 10px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 11.5em;
+}
+
+.listingManorText:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+}
+
+.exlusiveContainer {
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.exlusiveImg {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.97;
+}
+
+/* .exlusiveImg:hover {
+  opacity: 60%;
+} */
+
+.exclusiveText {
+  cursor: pointer;
+  font-weight: 200;
+  max-width: 80%;
+  font-family: Montserrat, sans-serif;
+  position: absolute; /* Position the text absolutely relative to its container */
+  z-index: 2; /* Higher z-index to place it on top */
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1.6;
+  letter-spacing: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.527);
+  padding: 10px;
+}
+
+.exclusiveText:hover {
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.712);
+  color: black;
+}
+
+.upcomingContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upcomingImg {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.upcomingText {
+  max-width: 80%;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 200;
+  font-family: Montserrat, sans-serif;
+  position: absolute; /* Position the text absolutely relative to its container */
+  margin: 0 auto;
+  z-index: 2; /* Higher z-index to place it on top */
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1.6;
+  letter-spacing: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.527);
+  padding: 10px;
+}
+
+.upcomingText:hover {
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.712);
+  color: black;
+}
+
+/* *Footer* */
+.footerUpperPart {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.footerPrimaryText {
+  font-weight: 150;
+  font-family: Montserrat, sans-serif;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.6;
+  letter-spacing: 6px;
+}
+
+.footerSecondaryText {
+  line-height: 1.6;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300 !important;
+  text-transform: uppercase;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstFooterButton {
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  color: black;
+  font-weight: 250;
+  z-index: 1;
+  background-color: transparent;
+  border-style: none;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.firstFooterButton:hover {
+  transition: 0.5s;
+  background-color: black;
+  color: white;
+}
+
+.secondFooterButton {
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-weight: 250;
+  z-index: 1;
+  background-color: transparent;
+  border-style: none;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: black;
+  background-color: rgb(228, 205, 144);
+}
+
+.secondFooterButton:hover {
+  transition: 0.5s;
+  background-color: black;
+  color: white;
+}
+
+.contactInformationFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInformationFooterP {
+  line-height: 1.6;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300 !important;
+  text-transform: uppercase;
+}
+
+.contactAdressInformationFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactAdressInformationFooterP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300 !important;
+  text-transform: uppercase;
+}
+
+a {
+  line-height: 1.6;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 170 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.adressA {
+  line-height: 1.6;
+  font-family: Montserrat, sans-serif;
+  font-weight: 170 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 0.8em;
+  /* text-align: center; */
+}
+
+.copyrightFooter {
+  font-size: small;
+  color: rgb(124, 124, 124);
+}
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+@media only screen and (min-width: 768px) {
+  .footerSecondaryText {
+    max-width: 70%;
+  }
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+  .exlusiveContainer, .upcomingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .exclusiveText, .upcomingText {
+    font-weight: 500;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+  body {
+    max-width: 100vw;
+  }
+
+  .exlusiveContainer,
+  .upcomingContainer {
+    /* Adjust positioning as needed */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+  }
+
+  .exlusiveImg,
+  .upcomingImg {
+    max-height: 60rem;
+    width: 100%;
+    height: 100%; /* Ensure it fills the container */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+    /* Other styles */
+  }
+
+  .hero-container {
+    position: absolute;
+    width: 100%;
+    /* top: 0;
+    left: 0; */
+    z-index: 3;
+    margin-bottom: 100px; /* Adjust margin as needed */
+  }
+
+  .hero-img {
+    width: 100%; /* Adjust width as needed */
+    height: 100%;
+    object-fit: fill;
+    z-index: 0; /* Ensure it's behind other elements */
+  }
+
+  .excluUpcomingContainer {
+    display: flex;
+    /* padding-top: 300px; */
+  }
+
+  .upcomingText,
+  .exclusiveText {
+    margin-top: 280px;
+    font-weight: 500;
+  }
+
+  .footerSecondaryText {
+    max-width: 70%;
+  }
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+  .footerContainer {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+  }
+}
