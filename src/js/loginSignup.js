@@ -115,8 +115,8 @@ document.addEventListener("DOMContentLoaded", function() {
       password: password.value,
     };
 
-    userName.value = "";
-    password.value = "";
+    // userName.value = "";
+    // password.value = "";
 
     try {
       let response = await fetch(url, {
