@@ -8,7 +8,7 @@ This project lets the user create an account and also sign in. The input is conn
 
 The backend db is uploaded to Heroku and the frontend is pushed to Netlify 🚀
 
-Technologies used for this project 
+Backend Repo 🔗: https://github.com/JPereyra7/realestate-backend
 
 || Frontend ||
 
