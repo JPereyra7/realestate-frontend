@@ -1,13 +1,31 @@
+document.addEventListener("DOMContentLoaded", function() {
   const logo = document.getElementById("logo");
   const formContainer = document.querySelector(".formContainer");
   const userName = document.getElementById("userName");
   const password = document.getElementById("password");
   const submitButton = document.getElementById("signUp");
   const loginForm = document.getElementById("loginForm");
+  const pCreateAccount = document.querySelector(".pCreateAccount");
+  const pLoginAccount = document.querySelector(".pLoginAccount");
 
+  let inputVal = ""; // Store the input value
 
-  
-  
+  // Function to handle input value change
+  const handleInputValue = (str) => {
+    inputVal = str; // Update the input value
+  };
+
+  // Event listener for input change
+  userName.addEventListener("input", function() {
+    handleInputValue(this.value);
+  });
+
+  // Event listener for input focus
+  userName.addEventListener("focus", function() {
+    handleInputValue(this.value);
+  });
+
+  // Click event listener for logo
   logo.addEventListener("click", function () {
     this.classList.toggle("clicked");
     
@@ -35,103 +53,89 @@
     }
   });
 
-document.addEventListener("DOMContentLoaded", function() {
-  const userName = document.getElementById("userName");
-  const pCreateAccount = document.querySelector(".pCreateAccount");
+  // Click event listener for create account link
   if (pCreateAccount) {
     pCreateAccount.addEventListener("click", function () {
       window.location.href = "./signup.html";
-      });
+    });
   }
   
-  const pLoginAccount = document.querySelector(".pLoginAccount");
+  // Click event listener for login link
   if (pLoginAccount) {
     pLoginAccount.addEventListener("click", function () {
       window.location.href = "./index.html";
     });
   }
-});
 
+  // Click event listener for submit button
+  submitButton.addEventListener("click", async (e) => {
+    e.preventDefault();
+    let url = "https://realestatelogin-589cb3f21124.herokuapp.com/api/create";
+    let method = "POST";
 
+    const passwordAgain = document.getElementById("passwordAgain");
 
-// CREATE USER
+    let users = {
+      username: userName.value,
+      password: password.value,
+      passwordIgen: passwordAgain.value,
+    };
+    userName.value = "";
+    password.value = "";
+    passwordAgain.value = "";
 
-async function fetchingUsers() {
-  return await (await fetch("https://realestatelogin-589cb3f21124.herokuapp.com/userslogin")).json();
-}
-
-submitButton.addEventListener("click", async (e) => {
-  e.preventDefault();
-  let url = "https://realestatelogin-589cb3f21124.herokuapp.com/api/create";
-  let method = "POST";
-
-  const passwordAgain = document.getElementById("passwordAgain");
-
-  let users = {
-    username: userName.value,
-    password: password.value,
-    passwordIgen: passwordAgain.value,
-  };
-  userName.value = "";
-  password.value = "";
-  passwordAgain.value = "";
-
-  try {
-    let response = await fetch(url, {
-      method: method,
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      credentials: "include",
-      body: JSON.stringify(users),
-    });
-    if (response.ok) {
-      alert("User Created");
-    } else {
-      alert("Failed to create user, try again.")
+    try {
+      let response = await fetch(url, {
+        method: method,
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+        body: JSON.stringify(users),
+      });
+      if (response.ok) {
+        alert("User Created");
+      } else {
+        alert("Failed to create user, try again.")
+      }
+    } catch (err) {
+      console.error("Server failed", err);
     }
-  } catch (err) {
-    console.error("Server failed", err);
-  }
-});
+  });
 
-//LOGIN Function
+  // Click event listener for login form submission
+  loginForm.addEventListener("click", async (event) => {
+    event.preventDefault();
+    let url = "https://realestatelogin-589cb3f21124.herokuapp.com/login";
+    let method = "POST";
 
-async function fetchUsers() {
-  return await (await fetch("https://realestatelogin-589cb3f21124.herokuapp.com/userslogin")).json();
-}
+    let userLogin = {
+      username: userName.value,
+      password: password.value,
+    };
 
-loginForm.addEventListener("click", async (event) => {
-  event.preventDefault();
-  let url = "https://realestatelogin-589cb3f21124.herokuapp.com/login";
-  let method = "POST";
+    userName.value = "";
+    password.value = "";
 
-  let userLogin = {
-    username: userName.value,
-    password: password.value,
-  };
-
-  userName.value = "";
-  password.value = "";
-
-  try {
-    let response = await fetch(url, {
-      method: method,
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      credentials: "include",
-      body: JSON.stringify(userLogin),
-    });
-    if (response.ok) {
-      alert("Successful login");
-      window.location.href = "/homepage.html";
-    } else {
-      console.log("Wrong username or password");
+    try {
+      let response = await fetch(url, {
+        method: method,
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+        body: JSON.stringify(userLogin),
+      });
+      if (response.ok) {
+        alert("Successful login");
+        window.location.href = "/homepage.html";
+      } else {
+        console.log("Wrong username or password");
+      }
+    } catch (err) {
+      console.error(err, "Failed");
     }
-  } catch (err) {
-    console.error(err, "Failed");
-  }
+  });
 });

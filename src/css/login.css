@@ -89,6 +89,10 @@ label {
   padding: 8px 20px;
 }
 
+input:focus {
+  outline: none;
+}
+
 .signIn {
   margin-top: 20px;
   padding: 8px 83px;
