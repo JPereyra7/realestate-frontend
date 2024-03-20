@@ -4,28 +4,19 @@
 
 Url 🔗: https://lillard-realestate.netlify.app/
 
-This project lets the user create an account and also sign in. The input is connected to a SQL database I created which uses Express Validator and BCrypt to hash passwords. The database is a MySQL database built on DBeaver, and the backend repo connects to it using REST. This project will in the future be built into a real estate application.
+This project lets the user create an account and also sign in. The input is connected to a non-relational database (MongoDB) I created which uses BCrypt to hash password credentials in order to apply a layer of security. The server side was using REST Api with endpoints for CRUD operations.
 
-Will upload the backend database to a web-host later on - In the meantime I have pushed the frontend repo to Netlify.
+The backend db is uploaded to Heroku and the frontend is pushed to Netlify 🚀
 
 Technologies used for this project 
 
 || Frontend ||
 
--Javascript ✅ <br />
--HTML5      ✅ <br />
--CSS3       ✅ <br />
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,vscode)](https://skillicons.dev)
 
 || Backend ||
 
--Javascript ✅ <br />
--Node.js    ✅ <br />
--Express.js ✅ <br />
--REST Api   ✅ <br />
--MySQL      ✅ <br />
--DBeaver    ✅ <br />
--Nodemon    ✅ <br />
--Cors       ✅ <br />
--BCrypt     ✅ <br />
--Express-Validator  ✅ <br />
--ORM (Sequelize)    ✅ <br />
+[![My Skills](https://skillicons.dev/icons?i=js,nodejs,express,mongodb,sequelize,powershell,bash,npm,git)](https://skillicons.dev)
+
+|| Host ||
+[![My Skills](https://skillicons.dev/icons?i=netlify,heroku)](https://skillicons.dev)
