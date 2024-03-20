@@ -81,12 +81,38 @@ label {
   font-weight: 500;
 }
 
-#usernameInput {
+#userName {
   padding: 8px 20px;
+  border-radius: 5px;
 }
 
-#passwordInput {
+#userName::placeholder {
+  color: rgb(187, 187, 187);
+}
+
+#password {
   padding: 8px 20px;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+#password::placeholder {
+  color: rgb(187, 187, 187);
+}
+
+#passwordAgain {
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+#passwordAgain::placeholder {
+  color: rgb(187, 187, 187);
+}
+
+input {
+  background-color: #79797941;
+  border-style: none;
+  color: aliceblue;
 }
 
 input:focus {
