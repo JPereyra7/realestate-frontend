@@ -1,4 +1,4 @@
-# Real Estate Frontend Repository (Login/Signup Authenticator)
+# Real Estate Signup form authenticator + Landing page
 
 ![alt](https://github.com/JPereyra7/realestate-frontend/blob/main/src/img/lillardprntscr.png?raw=true)
 
