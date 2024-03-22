@@ -4,7 +4,7 @@
 
 Url 🔗: https://lillard-realestate.netlify.app/
 
-This project lets the user create an account and also sign in. The input is connected to a non-relational database (MongoDB) I created which uses BCrypt to hash password credentials in order to apply a layer of security. The server side was using REST Api with endpoints for CRUD operations.
+This project lets the user create an account and also sign in to a Real Estate landingpage 🏠. The form is connected to a non-relational database (MongoDB) I created which uses BCrypt to hash password credentials in order to apply a layer of security. The server side was using REST Api with endpoints for CRUD operations together with MongoDB for storing the data.
 
 The backend db is uploaded to Heroku and the frontend is pushed to Netlify 🚀
 
